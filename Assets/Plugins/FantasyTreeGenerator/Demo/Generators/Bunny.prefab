@@ -1,0 +1,388 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2370073197661852613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2370073197661852632}
+  - component: {fileID: 2370073197661852633}
+  - component: {fileID: 2370073197661852634}
+  - component: {fileID: 2370073197661852635}
+  - component: {fileID: 2370073197661852612}
+  m_Layer: 3
+  m_Name: Bunny
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2370073197661852632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370073197661852613}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.13, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2370073197661852633
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370073197661852613}
+  m_Mesh: {fileID: 0}
+--- !u!23 &2370073197661852634
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370073197661852613}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 82b0e336700838c46859b25de3e601a8, type: 2}
+  - {fileID: 2100000, guid: 8ae4e08334b8bc340addab58d3748cda, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2370073197661852635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370073197661852613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &2370073197661852612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370073197661852613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91001668d5a8d4f49a54f1f3fcd9ffca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filterReference: {fileID: 2370073197661852633}
+  meshRenderer: {fileID: 2370073197661852634}
+  meshCollider: {fileID: 2370073197661852635}
+  branches:
+  - id: 0
+  leaves: []
+  sdfLeaves:
+  - id: 1
+  - id: 2
+  - id: 3
+  splineLeaves: []
+  customMeshes: []
+  vertexCount: 12035
+  renderSplineWithThirdMaterial: 0
+  meshName: Bunny
+  defaultMaterials:
+  - {fileID: 2100000, guid: 82b0e336700838c46859b25de3e601a8, type: 2}
+  - {fileID: 2100000, guid: 8ae4e08334b8bc340addab58d3748cda, type: 2}
+  - {fileID: 2100000, guid: a41b4a22df9065248b83472a91f10b6b, type: 2}
+  billboardNormals: {fileID: 2100000, guid: bee934b99630a214ca37ec3d12b456a9, type: 2}
+  numberOfLoDs: 4
+  previewLevel: 0
+  meshColliderLevel: 2
+  generating: 1
+  billboard:
+    id: 4
+  billboardSettings: {fileID: 11400000, guid: 180dde120e0451b479ec07ce13680749, type: 2}
+  overrideNormals: 1
+  references:
+    version: 1
+    00000000:
+      type: {class: Branch, ns: FTG, asm: FTG}
+      data:
+        IDInBranch: 0
+        render: 01010101
+        ID: 0
+        parent:
+          id: 5
+        depth: 0
+        position: 0.5
+        type: 0
+        offset: {x: 0, y: 0, z: 0}
+        seed: 1
+        dirty: 1
+        numberOfSides: 06000000040000000300000003000000
+        numberOfDivisions: 05000000040000000300000002000000
+        curve:
+          id: 6
+        noiseAmount: 0
+        appendages:
+        - id: 1
+        - id: 2
+        - id: 3
+    00000001:
+      type: {class: SDFLeaves, ns: FTG, asm: FTG}
+      data:
+        IDInBranch: 0
+        render: 01010101
+        ID: 0
+        parent:
+          id: 0
+        depth: 1
+        position: 0.587417
+        type: 3
+        offset: {x: -0.06980789, y: 1.090645, z: 0}
+        seed: 318
+        dirty: 1
+        formType: 0
+        rotationSpace: 0
+        overrideSphereSpace: 0
+        preferredRotation: {x: 90, y: 0, z: 0}
+        rotationRandomness: {x: 1, y: 1, z: 1}
+        positionOffset: {x: 0, y: 1.7, z: 0}
+        useSphereNormals: 0
+        cut: 1
+        shell: 0
+        density:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0.63242453
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.9956665
+            value: 1
+            inSlope: 0.82393885
+            outSlope: 0.82393885
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.10550885
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        rotation: {x: 0, y: 0, z: 0, w: 1}
+        radius: 2.11
+        innerRadius: 0.202
+        number: e8030000f4010000fa00000019000000
+        size:
+        - 0.46
+        - 0.65
+        - 0.8
+        - 0.95
+        scale: {x: 1, y: 1, z: 1}
+        length: 1
+        smoothness: 0
+    00000002:
+      type: {class: SDFLeaves, ns: FTG, asm: FTG}
+      data:
+        IDInBranch: 1
+        render: 01010101
+        ID: 1
+        parent:
+          id: 0
+        depth: 1
+        position: 0.999
+        type: 3
+        offset: {x: -0.15283906, y: 1.7022773, z: 0}
+        seed: 1
+        dirty: 1
+        formType: 0
+        rotationSpace: 0
+        overrideSphereSpace: 0
+        preferredRotation: {x: 90, y: 0, z: 0}
+        rotationRandomness: {x: 0, y: 0, z: 0}
+        positionOffset: {x: 2, y: 5, z: -0.45}
+        useSphereNormals: 0
+        cut: 1
+        shell: 0
+        density:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0.48770523
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.8306885
+            value: 1
+            inSlope: 0.82393885
+            outSlope: 0.82393885
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.10550885
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        rotation: {x: 0, y: 0, z: 0.14263658, w: -0.9897751}
+        radius: 1.1341463
+        innerRadius: 0.25
+        number: e8030000fa0000006400000019000000
+        size:
+        - 0.5
+        - 0.65
+        - 1
+        - 0.95
+        scale: {x: 0.5742383, y: 2.533568, z: 0.41123596}
+        length: 1
+        smoothness: 0
+    00000003:
+      type: {class: SDFLeaves, ns: FTG, asm: FTG}
+      data:
+        IDInBranch: 2
+        render: 01010101
+        ID: 2
+        parent:
+          id: 0
+        depth: 1
+        position: 0.999
+        type: 3
+        offset: {x: -0.15283906, y: 1.7022773, z: 0}
+        seed: 1
+        dirty: 1
+        formType: 0
+        rotationSpace: 0
+        overrideSphereSpace: 0
+        preferredRotation: {x: 90, y: 0, z: 0}
+        rotationRandomness: {x: 0, y: 0, z: 0}
+        positionOffset: {x: -2, y: 5, z: -0.45}
+        useSphereNormals: 0
+        cut: 1
+        shell: 0
+        density:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0.48770523
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.8306885
+            value: 1
+            inSlope: 0.82393885
+            outSlope: 0.82393885
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.10550885
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        rotation: {x: 0, y: 0, z: 0.16340165, w: 0.9865596}
+        radius: 1.1341463
+        innerRadius: 0.25
+        number: e8030000fa0000006400000019000000
+        size:
+        - 0.5
+        - 0.65
+        - 1
+        - 0.95
+        scale: {x: 0.5742383, y: 2.533568, z: 0.41123596}
+        length: 1
+        smoothness: 0
+    00000004:
+      type: {class: BillboardCreator, ns: FTG, asm: FTG}
+      data:
+        renderBillboard: 1
+        settings: {fileID: 11400000, guid: 180dde120e0451b479ec07ce13680749, type: 2}
+        output: {fileID: 0}
+    00000005:
+      type: {class: , ns: , asm: }
+    00000006:
+      type: {class: BezierSpline, ns: FTG, asm: FTG}
+      data:
+        name: Trunk
+        curveColor: {r: 1, g: 1, b: 1, a: 1}
+        size: 0
+        id: 0
+        generator: {fileID: 2370073197661852632}
+        points:
+        - id: 7
+        - id: 8
+        - id: 9
+        - id: 10
+        modes: 0000000000000000
+    00000007:
+      type: {class: Point, ns: FTG, asm: FTG}
+      data:
+        position: {x: 0, y: 0, z: 0}
+        radius: 0.4991019
+        scale: {x: 1, y: 1, z: 1}
+    00000008:
+      type: {class: Point, ns: FTG, asm: FTG}
+      data:
+        position: {x: -0.010757327, y: 0.8290861, z: 0}
+        radius: 0.1
+        scale: {x: 1, y: 1, z: 1}
+    00000009:
+      type: {class: Point, ns: FTG, asm: FTG}
+      data:
+        position: {x: -0.083257794, y: 1.1626598, z: 0}
+        radius: 0.1
+        scale: {x: 1, y: 1, z: 1}
+    0000000A:
+      type: {class: Point, ns: FTG, asm: FTG}
+      data:
+        position: {x: -0.1530484, y: 1.7039005, z: 0}
+        radius: 0.29578543
+        scale: {x: 1, y: 1, z: 1}
