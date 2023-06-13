@@ -5,7 +5,9 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {
     public GameObject[] eventSequence;
-    public GameObject visualEvent1, Hannah, Lauren;
+    public Rigidbody[] cajasRb;
+    public float impulseCajas;
+    public GameObject visualEvent1, Hannah;
     public AudioClip laugh;
     [HideInInspector] public int currentEvent;
     [HideInInspector] public int nextInSequence;
@@ -28,10 +30,8 @@ public class EventManager : MonoBehaviour
         {
             eventSequence[i].SetActive(false);
         }
-        eventSequence[0].SetActive(true);
         currentEvent = 0;
         Hannah.SetActive(false);
-        Lauren.SetActive(false);
         visualEvent1.SetActive(false);
     }
 
@@ -44,5 +44,14 @@ public class EventManager : MonoBehaviour
         currentEvent++;
         nextInSequence++;
         eventSequence[nextInSequence].SetActive(true);
+    }
+
+    [ContextMenu("assdasdasd")]
+    public void TirarCajas()
+    {
+        for (int i = 0; i < cajasRb.Length; i++)
+        {
+            cajasRb[i].AddForce(-Vector3.forward * impulseCajas, ForceMode.Impulse);
+        }
     }
 }

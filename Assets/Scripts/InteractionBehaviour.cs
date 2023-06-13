@@ -21,6 +21,7 @@ public class InteractionBehaviour : MonoBehaviour
             {
                 if (!GameManager.instance.hasBiberon)
                 {
+                    EventManager.instance.eventSequence[0].SetActive(true);
                     DialogueUI.instance.ShowDialogue(0);
                     GameManager.instance.NotifyEvent("New Quest", "Find food for Gordon");
                 }
@@ -34,8 +35,6 @@ public class InteractionBehaviour : MonoBehaviour
                     FatRoll.instance.MoveGordon();
                     SoundManager.instance.PlayGordon();
                     GameManager.instance.NotifyEvent("Gordons's Quest completed", "Explore the Second Floor");
-                    EventManager.instance.NextEvent();
-                    EventManager.instance.visualEvent1.SetActive(true);
                 }
             }
             else if (type == ObjectType.NINA)

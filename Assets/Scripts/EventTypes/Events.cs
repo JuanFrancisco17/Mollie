@@ -52,18 +52,18 @@ public class Events : MonoBehaviour
             if (type == EventType.VISUAL && dialogueNum == 8)
             {
                 SoundManager.instance.PlayOneshot(0, GameManager.instance.boxesClip);
+                EventManager.instance.TirarCajas();
+                EventManager.instance.NextEvent();
             }
             else if (type == EventType.STORY && dialogueNum == 8)
             {
                 //hannah y lauren aparecen
                 EventManager.instance.Hannah.SetActive(true);
-                // EventManager.instance.Lauren.SetActive(true);
             }
             else if (type == EventType.STORY && dialogueNum == 13)
             {
-                //hannah y lauren aparecen
+                //plank trigger
                 EventManager.instance.NextEvent();
-                // EventManager.instance.Lauren.SetActive(true);
             }
 
 
