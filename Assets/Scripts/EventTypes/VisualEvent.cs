@@ -8,6 +8,11 @@ public class VisualEvent : MonoBehaviour
     public GameObject shadow;
     public float duration;
 
+    private void Start()
+    {
+        shadow.SetActive(false);
+    }
+
     public void Activate()
     {
         StartCoroutine(CRT_Activate());
@@ -19,11 +24,6 @@ public class VisualEvent : MonoBehaviour
         SoundManager.instance.PlayOneshot(0, EventManager.instance.laugh);
         LeanTween.move(shadow, endPoint.position, duration).setEase(LeanTweenType.easeOutCirc);
         yield return new WaitForSeconds(duration);
-        shadow.SetActive(false);
-    }
-
-    public void DeactivateShadow()
-    {
         shadow.SetActive(false);
     }
 }

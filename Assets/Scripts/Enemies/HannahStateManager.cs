@@ -235,8 +235,7 @@ public class HannahStateManager : MonoBehaviour
         anim.SetTrigger("Attack");
         SoundManager.instance.PlayOneshot(1, screamer);
         yield return new WaitForSeconds(1.7f);
-        SceneManager.LoadScene(1);
-
+        SceneManager.LoadScene(0);
     }
     IEnumerator RoomPatrolDelay()
     {

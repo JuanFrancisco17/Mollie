@@ -20,10 +20,6 @@ public class Events : MonoBehaviour
     private void Start()
     {
         coll = gameObject.GetComponent<Collider>();
-        if (type == EventType.VISUAL)
-        {
-            VisualEvent.DeactivateShadow();
-        }
 
     }
     // Update is called once per frame
@@ -47,6 +43,7 @@ public class Events : MonoBehaviour
             {
                 BasicCharacterStateMachine.instance.rb.isKinematic = true;
                 DialogueUI.instance.ShowDialogue(dialogueNum);
+                Destroy(this.gameObject, 0.1f);
             }
 
             if (type == EventType.VISUAL && dialogueNum == 8)
@@ -80,10 +77,6 @@ public class Events : MonoBehaviour
             if (type != EventType.STORY || type != EventType.FALL)
             {
                 StartCoroutine(CollCooldown());
-            }
-            else
-            {
-                Destroy(this.gameObject, 0.1f);
             }
             EventManager.instance.currentEvent++;
         }
