@@ -18,7 +18,7 @@ public class YawController : MonoBehaviour
         //...hace un clamp para evitar errores en el movimiento...
         yaw = Mathf.Clamp(yaw, -50, 60);
         //...y rota la camara
-        transform.rotation = Quaternion.Euler(yaw, transform.rotation.eulerAngles.y, 0f);
+        transform.localRotation = Quaternion.Euler(yaw, 0, 0f);
         // transform.rotation = Quaternion.Euler(yaw, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 
     }

@@ -116,7 +116,7 @@ public class BasicCharacterStateMachine : MonoBehaviour
     public void Sneak()
     {
         sneaking = true;
-        transform.localScale = new Vector3(transform.localScale.x, 0.63f, transform.localScale.z);
+        transform.localScale = new Vector3(transform.localScale.x, 0.5f, transform.localScale.z);
     }
 
     public void ScaleBackToNormal()
@@ -207,7 +207,7 @@ public class BasicCharacterStateMachine : MonoBehaviour
                 }
                 else
                 {
-                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                    transform.localScale = new Vector3(transform.localScale.x, 1.26f, transform.localScale.z);
                 }
                 StartCoroutine(LeanIn());
                 if (!HannahStateManager.instance.detected)
@@ -219,14 +219,14 @@ public class BasicCharacterStateMachine : MonoBehaviour
             }
             else
             {
-                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                transform.localScale = new Vector3(transform.localScale.x, 1.26f, transform.localScale.z);
                 // transform.position = lastPosition;
                 LeanTween.move(this.gameObject, lastPosition, 0.5f).setEase(LeanTweenType.easeOutCirc);
                 coll.enabled = true;
                 rb.isKinematic = false;
             }
             //cooldown necesario para que no ocurra todo en el mismo frame
-            StartCoroutine(Cooldown(0.5f));
+            StartCoroutine(Cooldown(0.2f));
 
         }
 
