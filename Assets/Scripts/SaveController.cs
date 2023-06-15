@@ -41,6 +41,11 @@ public class SaveController : MonoBehaviour
         
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     public void Resume()
     {
         anim.Play("DownMove");
