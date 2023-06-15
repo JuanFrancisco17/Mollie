@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1478.8593, g: 1831.9368, b: 2425.4312, a: 1}
+  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3114,7 +3114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -376, y: 70}
+  m_AnchoredPosition: {x: -376, y: 138.00008}
   m_SizeDelta: {x: 21.62, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265141293
@@ -3480,7 +3480,6 @@ RectTransform:
   - {fileID: 1142126881}
   - {fileID: 1675629898}
   - {fileID: 265141292}
-  - {fileID: 2113307493}
   m_Father: {fileID: 418927617}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4861,7 +4860,7 @@ Transform:
   - {fileID: 2006516368}
   - {fileID: 293076335}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &418927618
 MonoBehaviour:
@@ -12742,7 +12741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -249.39966, y: 389}
+  m_AnchoredPosition: {x: -249.39966, y: 457}
   m_SizeDelta: {x: 1243.2007, y: 118.2202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &779636722
@@ -16198,7 +16197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.07007, y: 220}
+  m_AnchoredPosition: {x: -122.07007, y: 288.00006}
   m_SizeDelta: {x: 137.6087, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1150024478
@@ -21329,7 +21328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -307, y: -212}
+  m_AnchoredPosition: {x: -307, y: -143.99992}
   m_SizeDelta: {x: 586, y: 102}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675629899
@@ -22650,8 +22649,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.01178, y: -0.00086975}
-  m_SizeDelta: {x: 2149.3, y: 964.77}
+  m_AnchoredPosition: {x: 0.01178, y: -4.925}
+  m_SizeDelta: {x: 2149.3, y: 1108.953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1766600623
 Animation:
@@ -22662,9 +22661,10 @@ Animation:
   m_GameObject: {fileID: 1766600621}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f7ef525cd00302e40aad0e0635237a99, type: 2}
+  m_Animation: {fileID: 7400000, guid: 9b65912e9f299e14a88a9e589c742bb7, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f7ef525cd00302e40aad0e0635237a99, type: 2}
+  - {fileID: 7400000, guid: 9b65912e9f299e14a88a9e589c742bb7, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -23990,7 +23990,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1924801573
 PrefabInstance:
@@ -27006,16 +27006,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113307492}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 293076335}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 68.00008}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113307494
@@ -27032,6 +27032,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1142126880}
   volumeText: {fileID: 2117860967}
+  pauseMenuUI: {fileID: 0}
+  isMainMenu: 1
+  settingsMenu: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  tpCam: {fileID: 0}
+  yController: {fileID: 0}
+  anim: {fileID: 0}
+  audio: {fileID: 0}
 --- !u!1001 &2117196401
 PrefabInstance:
   m_ObjectHideFlags: 0
