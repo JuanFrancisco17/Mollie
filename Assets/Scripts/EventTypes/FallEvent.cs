@@ -5,6 +5,7 @@ using UnityEngine;
 public class FallEvent : MonoBehaviour
 {
     public GameObject thisTrigger;
+    public GameObject necesitaPlank;
     public Rigidbody[] rbs;
 
     private void Start()
@@ -14,12 +15,14 @@ public class FallEvent : MonoBehaviour
         {
             rbs[i].isKinematic = true;
         }
+        necesitaPlank.SetActive(false);
     }
 
     public void Activate()
     {
         StartCoroutine(CRT_Activate());
         SoundManager.instance.PlayOneshot(0, GameManager.instance.debrisClip);
+        // EventManager.instance.NextEvent();
     }
 
     IEnumerator CRT_Activate()
@@ -35,6 +38,6 @@ public class FallEvent : MonoBehaviour
             rbs[i].isKinematic = true;
             rbs[i].detectCollisions = false;
         }
-        EventManager.instance.NextEvent();
+        necesitaPlank.SetActive(true);
     }
 }

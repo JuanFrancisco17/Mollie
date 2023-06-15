@@ -56,11 +56,12 @@ public class Events : MonoBehaviour
             {
                 //hannah y lauren aparecen
                 EventManager.instance.Hannah.SetActive(true);
+                EventManager.instance.NextEvent();
             }
             else if (type == EventType.STORY && dialogueNum == 13)
             {
                 //plank trigger
-                EventManager.instance.NextEvent();
+                EventManager.instance.plankPickUp.SetActive(true);
             }
 
 

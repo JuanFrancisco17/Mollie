@@ -6,10 +6,13 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [HideInInspector] public bool hasKey = false;
-    [HideInInspector] public bool hasBiberon = false;
+    [HideInInspector]
+    public bool hasKey = false;
+    [HideInInspector]
+    public bool hasBiberon = false;
     [HideInInspector] public bool hasTrain = false;
-    [HideInInspector] public bool hasPlank = false;
+    [HideInInspector]
+    public bool hasPlank = false;
     [HideInInspector] public bool biberonGiven = false;
     [HideInInspector] public bool trainGiven = false;
     public GameObject key, floorPlank;
@@ -36,6 +39,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         key.SetActive(false);
+        hasKey = false;
+        hasPlank = false;
+        hasBiberon = false;
+        hasTrain = false;
         floorPlank.SetActive(false);
         TaskText.text = "Explore Main Floor";
     }

@@ -8,6 +8,7 @@ public class EventManager : MonoBehaviour
     public Rigidbody[] cajasRb;
     public float impulseCajas;
     public GameObject visualEvent1, Hannah;
+    public GameObject plankPickUp;
     public AudioClip laugh;
     [HideInInspector] public int currentEvent;
     [HideInInspector] public int nextInSequence;
@@ -33,6 +34,7 @@ public class EventManager : MonoBehaviour
         currentEvent = 0;
         Hannah.SetActive(false);
         visualEvent1.SetActive(false);
+        plankPickUp.SetActive(false);
     }
 
     public void NextEvent()
