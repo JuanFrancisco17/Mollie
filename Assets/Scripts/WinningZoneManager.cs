@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class WinningZoneManager : MonoBehaviour
 {
     [SerializeField] GameObject winningPanel;
+    public AudioClip winningMusic;
 
     private void Start()
     {
@@ -22,8 +23,9 @@ public class WinningZoneManager : MonoBehaviour
 
     IEnumerator Win()
     {
+        SoundManager.instance.PlayOneshot(0, winningMusic);
         winningPanel.SetActive(true);
         yield return new WaitForSeconds(4f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(0);
     }
 }
